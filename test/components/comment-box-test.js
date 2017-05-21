@@ -1,4 +1,4 @@
-import { renderComponent, expect } from '../test_helper';
+import { renderComponent, expect } from '../test-helper';
 import CommentBox from '../../src/components/comment-box';
 
 describe('CommentBox', () => {
