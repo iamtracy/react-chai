@@ -30,7 +30,7 @@ class CommentBox extends Component {
             </div>
             <div className="form-group">
                 <button 
-                    type="submit" 
+                    action="submit" 
                     className="btn btn-primary">
                     Submit Comment
                 </button>
