@@ -21,21 +21,21 @@ class CommentBox extends Component {
 
     render() {
         return (
-        <form onSubmit={this.handleSubmit.bind(this)} className="row comment-box">
-            <div className="form-group">
-                <textarea 
-                    className="form-control" 
-                    value={this.state.comment} 
-                    onChange={this.handleChange.bind(this)}/>
-            </div>
-            <div className="form-group">
-                <button 
-                    action="submit" 
-                    className="btn btn-primary">
-                    Submit Comment
-                </button>
-            </div>
-        </form>
+            <form onSubmit={this.handleSubmit.bind(this)} className="row comment-box">
+                <div className="form-group">
+                    <textarea 
+                        className="form-control" 
+                        value={this.state.comment} 
+                        onChange={this.handleChange.bind(this)}/>
+                </div>
+                <div className="form-group">
+                    <button 
+                        action="submit" 
+                        className="btn btn-primary">
+                        Submit Comment
+                    </button>
+                </div>
+            </form>
         );
     }
 }

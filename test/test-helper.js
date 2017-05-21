@@ -20,9 +20,9 @@ const $ = _$(window);
 chaiJquery(chai, chai.util, $);
 
 function renderComponent(ComponentClass, props = {}, state = {}) {
-    const componentInstance = ReactTestUtils.renderIntoDocument( <
-        Provider store = { createStore(reducers, state) } >
-        <ComponentClass {...props }/> 
+    const componentInstance = ReactTestUtils.renderIntoDocument( 
+        <Provider store={ createStore(reducers, state) } >
+            <ComponentClass { ...props }/> 
         </Provider>
     );
 
