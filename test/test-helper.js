@@ -25,7 +25,6 @@ function renderComponent(ComponentClass, props = {}, state = {}) {
             <ComponentClass { ...props }/> 
         </Provider>
     );
-
     return $(ReactDOM.findDOMNode(componentInstance));
 }
 
