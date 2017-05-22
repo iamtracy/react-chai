@@ -10,13 +10,13 @@ describe('CommentList', () => {
         component = renderComponent(CommentList, null, props);
     });
 
-    it('shows an LI for each comment', () => {
-        expect(component.find('li').length).to.equal(2);
+    it('shows an p for each comment', () => {
+        expect(component.find('p').length).to.equal(3);
     });
 
     it('shows each comment that is provided', () => {  
         props.comments.map(comment => {
-            expect(component.find('li')).to.contain(comment);
+            expect(component.find('p')).to.contain(comment);
         });
     });
 });

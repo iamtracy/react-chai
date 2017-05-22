@@ -21,7 +21,7 @@ class CommentBox extends Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit.bind(this)} className="row comment-box">
+            <form onSubmit={this.handleSubmit.bind(this)} className="comment-box">
                 <div className="form-group">
                     <textarea 
                         className="form-control" 
